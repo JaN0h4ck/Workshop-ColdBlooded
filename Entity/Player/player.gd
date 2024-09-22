@@ -137,7 +137,7 @@ func _handle_jump_and_glide(is_on_ground: bool) -> void:
 		elif not has_double_jumped:
 			velocity.y = second_jump_velocity
 			animated_sprite_2d.play(&"Jump")
-			AudioManager.sound_jump()
+			#AudioManager.sound_jump()
 			_use_vertical_pinch_hitbox()
 			has_double_jumped = true
 	if Input.is_action_pressed("move_jump"):
