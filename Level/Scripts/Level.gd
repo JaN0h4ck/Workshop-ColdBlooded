@@ -37,7 +37,7 @@ var playing_ui: Control = preload("res://Level/Ui/level_playing.tscn").instantia
 var finish_ui: CenterContainer = preload("res://Level/Ui/level_finished.tscn").instantiate()
 
 @onready
-var pause_ui: CenterContainer = preload("res://Level/Ui/level_paused.tscn").instantiate()
+var pause_ui: Control = preload("res://Level/Ui/level_paused.tscn").instantiate()
 
 var player
 
