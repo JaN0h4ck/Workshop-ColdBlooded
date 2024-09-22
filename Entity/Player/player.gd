@@ -4,7 +4,7 @@ extends CharacterBody2D
 var entity_resource: EntityResource
 
 @export
-var speed = 2000
+var speed = 512
 
 @export_group("Jump")
 @export
@@ -88,7 +88,7 @@ func _ready() -> void:
 	ice_breath_cooldown_timer.one_shot = true
 	ice_breath_cooldown_timer.wait_time = ice_breath_cooldown_seconds
 	add_child(ice_breath_cooldown_timer)
-	
+
 	damage_taken.emit(entity_resource)
 
 func _init_state_machine():
