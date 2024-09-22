@@ -68,6 +68,8 @@ var animation_player: AnimationPlayer = $AnimationPlayer
 
 var is_facing_right = false
 
+var is_gliding: bool = false
+
 @onready
 var _inital_health = entity_resource.health
 
@@ -143,7 +145,11 @@ func _handle_jump_and_glide(is_on_ground: bool) -> void:
 	if Input.is_action_pressed("move_jump"):
 		if not is_on_ground and velocity.y > 0.0:
 			velocity.y = glide_gravity
-			animated_sprite_2d.play(&"Glide")
+			if not is_gliding:
+				animated_sprite_2d.play(&"Glide")
+				is_gliding = true
+	if Input.is_action_just_released("move_jump"):
+		is_gliding = false
 
 func get_current_gravity() -> float:
 	if velocity.y < 0.0: # ternary statement is back, hell yeah!
