@@ -4,7 +4,7 @@ extends CharacterBody2D
 var entity_resource: EntityResource
 
 @export
-var speed = 512
+var speed = 2000
 
 @export_group("Jump")
 @export
