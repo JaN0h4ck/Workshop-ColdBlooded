@@ -71,7 +71,7 @@ text = "Jake Best - Character Design and Animation"
 [node name="Label3" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
-text = "Jan Notacker - Gameplay/AI Programming"
+text = "Jan Nothacker - Gameplay/AI Programming"
 
 [node name="Label2" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
