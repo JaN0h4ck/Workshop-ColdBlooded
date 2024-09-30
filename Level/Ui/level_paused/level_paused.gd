@@ -17,7 +17,7 @@ func on_main_menu():
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("pause_game") && !visible:
 		visible=true
-		get_tree().paused=true
+		#get_tree().paused=true
 
 func on_resumed():
 	visible=false
